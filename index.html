@@ -1,0 +1,108 @@
+<!-- Copyright (C) Piotr Wiercinski 2017.
+	Distributed under the MIT License (license terms are at http://opensource.org/licenses/MIT).
+ -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="author" content="Piotr Wiercinski">
+		<meta name="description" content="Rock Paper Scissors Game with Infinite Timeline">
+		<meta name="keywords" content="javascript, canvas, rock, paper, scissors, game, html, jquery">
+		
+		<title>RPS Game</title>
+		
+		<script type="application/javascript" src="dist/bundle.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Slackey|Walter+Turncoat" rel="stylesheet">
+		<link rel="stylesheet" href="assets/style.css">
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	</head>
+	<body>
+
+	 	<div class="game">
+	 		<div class="main">
+	 			
+	 			<div class="overlay" id="start-screen">
+	 				<h1 id="title">Welcom to Your RPS Game!</h1>
+	 				<h2 id="start">Click to Start</h2>
+	 				<h2 id="how-to">Instructions</h2>
+
+	 				<h4>A Game By Piotr Wiercinski</h4>
+	 			</div>
+
+	 			<canvas id="mainCanvas"></canvas>
+
+	 			<div class="hidden" id="companion">
+	 				<h2 id="companion-pause">(P)ause</h2>
+	 				<h2 id="companion-restart">(R)estart</h2>
+	 				<h2 id="companion-home">(H)ome</h2>
+	 			</div>
+
+	 			<div class="hidden" id="game-over-screen">
+	 				<h2>Game Over</h2>
+	 				<h2 id="restart">Click to Restart</h2>
+	 			</div>
+
+
+
+	 			<div class="hidden" id="instruction-screen">
+	 				
+	 				<div class="instructions-left">
+	 					<div class="diagram-frame">
+	 						<img id="diagram" src="assets/images/diagram.png">
+	 					</div>
+	 				</div>
+
+	 				<div id="instructions-right">
+	 					<div class="instructions-text">
+	 						<p>Paper beats rock, rock beats scissors, scissors beats paper!  
+	 						Shift into the correct form to defeat your foes!</p>
+	 					</div>
+
+	 					<div class="instructions-buttons">
+	 						<h2 id="how-to-start">Click to Start</h2>
+	 						<h2 id="how-to-back">Back</h2>
+	 					</div>
+	 				</div>
+
+	 			</div>
+
+
+	 			<div class="hidden" id="pause-screen">
+	 				<div class="pause-menu">
+	 					<h2 id="pause-continue">Continue</h2>
+	 					<h2 id="pause-restart">Restart</h2>
+	 					<h2 id="pause-home">Home</h2>
+	 				</div>
+	 			</div>
+
+	 		</div>
+	 	</div>
+<!-- End fo Game -->
+	
+		<div class="footer">	
+			<div class="rock">
+				<img src="assets/images/keys/z.png" alt="">
+				<img src="assets/images/keys/cursor-left.png" alt="">
+				<img src="assets/images/rock.png" alt="">
+			</div>
+
+			<div class="paper">
+				<img src="assets/images/keys/x.png" alt="">
+				<img src="assets/images/keys/cursor-down.png" alt="">
+				<img src="assets/images/paper.png" alt="">
+			</div>
+
+			<div class="scissors">
+				<img src="assets/images/keys/c.png" alt="">
+				<img src="assets/images/keys/cursor-right.png" alt="">
+				<img src="assets/images/scissors.png" alt="">
+			</div>
+
+			<a href="#" target="_blank"><img src="assets/images/github.png" alt=""></a>	
+			<a href="#" target="_blank"><img src="assets/images/linkedin.png" alt=""></a>	
+		</div>		
+	
+	</body>
+</html>

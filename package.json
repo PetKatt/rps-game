@@ -1,0 +1,29 @@
+{
+  "name": "rpm",
+  "version": "1.0.0",
+  "description": "Rock, paper, scissors game :)",
+  "main": "app.js",
+  "scripts": {
+    "start": "webpack-dev-server --entry ./lib/app.js --output-filename ./dist/bundle.js",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/PetKatt"
+  },
+  "keywords": [
+    "rpm",
+    "javascript"
+  ],
+  "author": "Piotr Wiercinski",
+  "license": "MIT",
+  "dependencies": {
+    "webpack-dev-server": "^2.9.7"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "webpack": "^3.10.0"
+  }
+}

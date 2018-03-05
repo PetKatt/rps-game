@@ -1,0 +1,217 @@
+/*Copyright (C) Piotr Wiercinski 2017.
+Distributed under the MIT License (license terms are at http://opensource.org/licenses/MIT).*/
+
+body
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#title
+{
+	font-family: 'Slackey', cursive;
+	font-size: 40px;
+	color: white;
+	text-shadow: 
+		2px 1px 2px black,
+		-1px 3px 2px black,
+		4px -2px 2px black,
+		-1px -2px 2px black;
+}
+
+.footer
+{
+	width: 780px;
+	margin: 0 auto;
+	text-align: center;
+	border: solid 8px black;
+	margin-top: 15px;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer a img
+{
+	height: 50px;
+	width: 50px;
+	opacity: 0.75;
+}
+
+.footer a img:hover
+{
+	opacity: 1;
+}
+
+.footer div
+{
+	vertical-align: middle;
+}
+
+.footer div img
+{
+	height: 50px;
+	width: 50px;
+}
+
+.game
+{
+	margin: 0 auto;
+	border: solid 8px black;
+}
+
+#start-screen, #game-over-screen, #pause-screen
+{
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#companion
+{
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	top: 440px;
+	left: 10px;	
+	z-index: 20;
+}
+
+#companion-pause
+{
+	margin-right: 10px;
+}
+
+#companion-restart
+{
+	margin-right: 10px;
+}
+
+#companion h2::first-letter
+{
+	color: white;
+}
+
+.pause-overlay, .companion-overlay
+{
+	position: absolute;
+	width: 800px;
+	height: 500px;
+	font-family: "Walter Turncoat";
+}
+
+#instruction-screen
+{
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+}
+
+#diagram
+{
+	padding-top: 5px;
+}
+
+.diagram-frame
+{
+	border: solid 5px black;
+	margin-left: 60px;
+	background-color: white;
+	height: 215px;
+}
+
+.instructions-left, .instructions-right
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.instructions-text
+{
+	background-color: white;
+	border: solid 5px black;
+	padding: 10px;
+	text-align: center;
+	width: 50%;
+	margin: 0 auto;
+	font-size: 18px;
+}
+
+.instructions-buttons
+{
+	padding: 10px;
+	width: 40%;
+	margin: 10px auto 0px auto;
+	text-align: center;
+}
+
+#how-to-start, #how-to-back
+{
+	background-color: white;
+	border: solid 5px black;
+	padding: 5px;
+}
+
+.main
+{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.hidden
+{
+	visibility: hidden;
+}
+
+.overlay h2:hover
+{
+	cursor: pointer;
+	text-shadow: 
+		0px 0px 10px #fff,
+		0px 0px 20px #fff,
+		0px 0px 30px #fff,
+		0px 0px 40px #fff,
+		0px 0px 80px #ffff66,
+		0px 0px 100px #ffff66,
+		0px 0px 150px #ffff66,
+		0px 0px 180px #ffff66;
+}
+
+.pause-menu
+{
+	border: solid 5px black;
+	background-color: white;
+	padding: 10px 30px 10px 30px;
+	opacity: 0.85;
+	text-align: center;
+}
+
+#how-to-start:hover, #how-to-back:hover
+{
+	cursor: pointer;
+	text-shadow: 
+		0 0 10px #fff, 
+		0 0 20px #fff, 
+		0 0 30px #fff, 
+		0 0 40px #004d99, 
+		0 0 70px #004d99, 
+		0 0 80px #004d99, 
+		0 0 100px #004d99, 
+		0 0 150px #004d99;
+}
+
+.overlay
+{
+	position: absolute;
+	width: 800px;
+	height: 500px;
+	background-image: url("images/scrollingBackground.png");
+	font-family: "Walter Turncoat";
+}
